@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>First</title>
+<title>Your Data</title>
 </head>
 <body>
-<h2>Spring MVC Demo</h2>
-<a href="student/showForm">Hello Show Form</a>
+You Inserted:${message} 
 </body>
 </html>
