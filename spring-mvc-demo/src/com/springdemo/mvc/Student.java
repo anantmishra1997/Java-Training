@@ -4,7 +4,19 @@ import java.util.LinkedHashMap;
 
 public class Student {
 
-	private String firstName,lastName,country;
+	private String firstName,lastName,country,favouriteLanguage,operatingSystems;
+	public String getOperatingSystems() {
+		return operatingSystems;
+	}
+	public void setOperatingSystems(String operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+	public String getFavouriteLanguage() {
+		return favouriteLanguage;
+	}
+	public void setFavouriteLanguage(String favouriteLanguage) {
+		this.favouriteLanguage = favouriteLanguage;
+	}
 	private LinkedHashMap<String,String> countryOptions;
 	public Student(){
 		countryOptions=new LinkedHashMap<>();

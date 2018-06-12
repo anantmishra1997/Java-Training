@@ -9,6 +9,10 @@
 <body>
 The student confirmed:${student.firstName} ${student.lastName}
 <br><br>
+Favourite Language:${student.favouriteLanguage}
+<br><br>
+Operating System Comfortable with:${student.operatingSystems}
+<br><br>
 Country:${student.country}  
 </body>
 </html>
