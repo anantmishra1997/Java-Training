@@ -1,0 +1,9 @@
+<%@taglib prefix="s" uri="/struts-tags"%>
+<center>
+<h1>List of Users</h1>
+<table border="10">
+<tr>
+<th>Username</th>
+<th>Password</th>
+</table>
+</center>

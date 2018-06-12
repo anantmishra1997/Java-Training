@@ -1,0 +1,16 @@
+
+
+<%@ taglib prefix="s" uri="/struts-tags" %>
+    
+    
+    
+    <s:textfield name="t1" label="enter x"> </s:textfield>
+    
+    <s:actionerror/>
+    <s:textarea name="username" label=" User Name" size="15"/>
+    <s:password name="password" label="Password" size="15"/>
+    <s:textarea label="Address" name="address" cols="40" rows="10"/>
+     <s:checkboxlist name="skill" label="Your Interest" list="{'java','C'}"/>
+     <s:submit value="submit"/>
+   
+ 

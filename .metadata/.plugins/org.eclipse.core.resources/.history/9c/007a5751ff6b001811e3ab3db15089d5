@@ -1,0 +1,26 @@
+package com.annotations;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class TennisCoach implements Coach {
+private FortuneService theFortune;
+	
+	@Autowired
+	public TennisCoach(FortuneService theService) {
+		// TODO Auto-generated constructor stub
+		theFortune=theService;
+	}
+	@Override
+	public String getDailyWorkout() {
+		return "Tennis Coach";
+	}
+
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return theFortune.getFortune();
+	}
+
+}

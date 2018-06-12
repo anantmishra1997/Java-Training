@@ -1,0 +1,11 @@
+package com.demo;
+
+public class Trackcoach implements Coach {
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "fasfda";
+	}
+
+}

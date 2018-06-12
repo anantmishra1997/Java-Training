@@ -1,0 +1,16 @@
+<%@taglib prefix="s" uri="/struts-tags"%>
+<center>
+<h1>List of Users</h1>
+<table border="10">
+<tr>
+<th>Username</th>
+<th>Password</th>
+</tr>
+<s:iterator id="u" value="#request['mydata']">
+<tr>
+<td><s:property value="username"/></td>
+<td><s:property value="password"/></td>
+</tr>
+</s:iterator>
+</table>
+</center>

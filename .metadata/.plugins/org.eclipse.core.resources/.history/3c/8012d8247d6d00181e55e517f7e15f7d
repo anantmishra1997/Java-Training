@@ -1,0 +1,21 @@
+package com.annotations;
+
+public class SwimCoach implements Coach {
+
+	private FortuneService thefortune;
+	public SwimCoach(FortuneService fortune) {
+	thefortune=fortune;
+	}
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

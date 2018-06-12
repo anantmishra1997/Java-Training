@@ -1,0 +1,7 @@
+package com.demo;
+
+public class Baseballcoach {
+	public String getDailyWorkout() {
+		return "asldjn";
+	}
+}

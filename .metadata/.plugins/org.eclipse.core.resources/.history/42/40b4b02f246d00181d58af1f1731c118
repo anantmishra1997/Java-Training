@@ -1,0 +1,5 @@
+package mypack;
+	import com.opensymphony.xwork2.ActionSupport;
+public class Login {
+	String username,password;
+}

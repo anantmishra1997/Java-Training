@@ -1,0 +1,27 @@
+package com.demo;
+
+public class Cricketcoach implements Coach {
+
+	private FortuneService fortuneService;
+	public Cricketcoach(){
+		System.out.println("Inside");
+	}
+	
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Cricket Coach";
+	}
+
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("Inside Setter");
+		this.fortuneService = fortuneService;
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return fortuneService.getFortune();
+	}
+
+}

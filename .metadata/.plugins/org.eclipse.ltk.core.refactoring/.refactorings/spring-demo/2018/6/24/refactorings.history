@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;sports.properties&apos; to &apos;spring-demo-annotations/src&apos;&#x0D;&#x0A;- Original project: &apos;spring-demo&apos;&#x0D;&#x0A;- Destination element: &apos;spring-demo-annotations/src&apos;&#x0D;&#x0A;- Original element: &apos;sports.properties&apos;" description="Copy file" destination="=spring-demo-annotations/src" element1="src/sports.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1528725157328" units="0" version="1.0"/>
+</session>

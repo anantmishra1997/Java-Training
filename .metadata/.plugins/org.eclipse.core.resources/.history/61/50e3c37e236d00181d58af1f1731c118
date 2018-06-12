@@ -1,0 +1,15 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>  
+   <s:form action="result">
+   <s:textfield name="username" label=" User Name" size="15"/>
+    <s:password name="password" label="Password" size="15"/>
+	<s:submit value="submit"/>
+    </s:form>
+
+    
+    Struts.xml
+    <action name="result" class="First.Login">
+    <result name="error"> Login.jsp</result>
+    <result name="succes">succes.jsp</result>
+    </action>
+    
+    

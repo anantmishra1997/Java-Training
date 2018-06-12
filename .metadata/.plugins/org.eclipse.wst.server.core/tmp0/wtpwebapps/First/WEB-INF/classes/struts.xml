@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+   <constant name = "struts.devMode" value = "true" />
+   <package name = "default" extends = "struts-default">
+     
+      <action name="result" class="mypack.Login">
+    <result name="error"> Login.jsp</result>
+    <result name="success">success.jsp</result>
+    </action>
+    </package>
+    <package name="default" extends = "struts-default">
+    <action name="deluser" class="mypack.action.Login1" method="del">
+    <result name="succes">del_user.jsp</result>
+    </action>
+    <action name="deluser1" class="mypack.action.Login1" method="del1">
+    <result name="success">del_user.jsp</result>
+    </action>
+    <action name="edituser" class="mypack.action.Login1" method="del">
+    <result name="succes">edituser.jsp</result>
+    </action>
+   </package>
+  </struts>

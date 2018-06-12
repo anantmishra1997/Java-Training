@@ -1,0 +1,8 @@
+ <%@ taglib prefix="s" uri="/struts-tags" %>
+    
+   <s:form action="abcs"/>
+   <s:combobox label="What's your favor fruit" 
+		headerKey="-1" headerValue="--- Select ---"
+		list="{'fruits','vegetables'}" 
+		name="yourFruits" />
+		

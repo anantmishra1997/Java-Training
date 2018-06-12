@@ -1,0 +1,20 @@
+package com.annotations;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class HappyFortuneService implements FortuneService {
+
+	private FortuneService theFortune;
+	
+	public HappyFortuneService(FortuneService theService) {
+		// TODO Auto-generated constructor stub
+		theFortune=theService;
+	}
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return "Get Fortune";
+	}
+
+}
