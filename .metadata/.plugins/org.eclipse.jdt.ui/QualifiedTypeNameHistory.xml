@@ -24,9 +24,7 @@
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="mypack.MyConnection"/>
-<fullyQualifiedTypeName name="org.apache.struts2.interceptor.ServletRequestAware"/>
 <fullyQualifiedTypeName name="org.apache.catalina.User"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 <fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
@@ -52,4 +50,7 @@
 <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
 <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
 <fullyQualifiedTypeName name="javax.validation.ConstraintValidatorContext"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.ServletRequestAware"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

@@ -15,6 +15,20 @@
     <result name="success">success.jsp</result>
     </action>
     
+    <action name="loginaction" class="mypack.action.Loginlogin">
+    <result name="success"> indexlogin.jsp</result>
+    <result name="error"> loginlogin.jsp</result>
+    </action>
+    
+    <action name="addEmployee" class="mypack.action.Employee">
+    <result name="success">emp.jsp</result>
+    <result name="error">emp.jsp</result>
+    </action>
+    
+    <action name="logoutAction" class="mypack.action.Logout">
+    <result name="success">indexlogin.jsp</result>
+    </action>
+    
    </package>
   </struts>
      
