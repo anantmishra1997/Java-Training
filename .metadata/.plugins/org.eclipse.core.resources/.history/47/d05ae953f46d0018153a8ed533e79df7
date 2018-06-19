@@ -1,6 +1,0 @@
-package mypack;
-
-public class User {
-	String username,password;
-	int id;
-}

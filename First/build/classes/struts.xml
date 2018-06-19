@@ -5,28 +5,47 @@
 <struts>
    <constant name = "struts.devMode" value = "true" />
    <package name = "default" extends = "struts-default">
-     
+   
+    <interceptors>
+    <interceptor name="loginInterceptor" class="net.mypack.interceptor.MyLogin"></interceptor>
+    </interceptors>  
+    
+    <global-results>
+    <result name="error" type="freemarker">/resources/login.jsp</result>
+    </global-results>
+    
     <action name="autoCompleteAction" class="mypack.AutoCompleterAction" method="display">
     <result name="none">autocompleter.jsp</result>
     </action>
-   
-    <action name="result" class="mypack.Login">
-    <result name="error"> Login.jsp</result>
-    <result name="success">success.jsp</result>
+    
+    <action name="deluser" class="mypack.action.Login1" method="del">
+    <result name="succes">del_user.jsp</result>
     </action>
     
-    <action name="loginaction" class="mypack.action.Loginlogin">
-    <result name="success"> indexlogin.jsp</result>
-    <result name="error"> loginlogin.jsp</result>
+    <action name="deluser1" class="mypack.action.Login1" method="del1">
+    <result name="success">del_user.jsp</result>
     </action>
     
-    <action name="addEmployee" class="mypack.action.Employee">
-    <result name="success">emp.jsp</result>
-    <result name="error">emp.jsp</result>
+    <action name="edituser" class="mypack.action.Login1" method="del">
+    <result name="succes">edituser.jsp</result>
     </action>
     
-    <action name="logoutAction" class="mypack.action.Logout">
-    <result name="success">indexlogin.jsp</result>
+    <action name="res" class="mypack.ImageController">
+    <result name="success">result.jsp</result>
+    <result name="error">Upload.jsp</result>
+    <result name="input">result.jsp</result>
+    </action>
+    
+    <action name="loginPage" method="displayForm" class="net.mypack.model.LoginModel">
+    <result name="input">/resources/login.jsp</result>
+    </action> 
+    
+    <action name="doLogin" class="net.mypack.action.LoginAction">
+    <interceptor-ref name="loginInterceptor"/>
+    <interceptor-ref name="logger"/>
+    <result name="success">/resources/welcome.jsp</result>
+    <result name="input">/resources/login.jsp</result>
+    <result name="erro">/resources/error.jsp</result>
     </action>
     
    </package>

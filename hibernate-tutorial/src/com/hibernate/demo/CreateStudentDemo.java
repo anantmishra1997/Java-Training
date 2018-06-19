@@ -1,5 +1,7 @@
 package com.hibernate.demo;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -15,11 +17,8 @@ public class CreateStudentDemo {
 		Session session=factory.getCurrentSession();
 		
 		try {
-			System.out.println("Creating new Objects");
-			Student tempStudent= new Student("Anant","Mishra","kanhamishra76@yahoo.in");
 			session.beginTransaction();
-			System.out.println("Saving");
-			session.save(tempStudent);
+			session.createQuery("update Student set firstName='Kanha' where email='kanhamishra76@yahoo.in'").executeUpdate();
 			session.getTransaction().commit();
 			System.out.println("Done");
 		}
